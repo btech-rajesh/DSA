@@ -1,10 +1,33 @@
 package lec40;
 import java.util.*;
 
-import lec40.cycle_list.ListNode;
+// import lec40.cycle_list.ListNode;
 public class reverse_klist {
+    public static void main(String[] args) {
+    int arr[]={4,5,0,-2,-3,1};
+    int sum=0;
+    int count=0;
+    int l=5;
+    int n=arr.length;
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            for(int k=i;k<=j;k++){
+               if(arr[k]>arr[k-1]){
+                count++;
+               }
+    
+
+    }
+    // System.out.println("");
+    }
+
+    System.out.println(count);
+    }
    
+    }}
+
    
+
 // class ListNode {
 //     int val;
 //     ListNode next;
@@ -65,33 +88,5 @@ public class reverse_klist {
 //             node = node.next;
 //         }
         
-//     }
-public class ListNode {
-         int val;
-         ListNode next;
-         ListNode() {}
-         ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-     }
-public static void main(String[] args) {
-    int n=5;
-    LinkedList<Integer>l=new LinkedList<>();
-    for(int i=1;i<=n;i++){
-        l.add(i);
-    }
-   odd_evNode(head,n);
-}
-public static ListNode odd_evNode(LinkedList<Integer>l,int n){
-
-    for(int i=0;i<n;i++){
-        if(l(i).val%2==0){
-            
-        }
-    }
-
-}
-
-
-    }
-
+//    }
     

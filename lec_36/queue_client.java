@@ -8,9 +8,9 @@ public class queue_client {
     q.Enqueue(40);
     q.Display();
     System.out.println(q.Dqueue());
-    System.out.println(q.Dqueue());
-    q.Enqueue(50);
-    q.Enqueue(60);
+    // System.out.println(q.Dqueue());
+    // q.Enqueue(50);
+    // q.Enqueue(60);
     q.Display();
 
         

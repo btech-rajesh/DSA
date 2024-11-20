@@ -1,9 +1,9 @@
 package lec39;
 
-public class link_list {
+public class link_list <T>{
 
     class Node{
-        int val;
+       T val;
         Node next;
     }
     private Node head;
@@ -12,7 +12,7 @@ public class link_list {
 
     //add,remove,get,display,size;
     
-    public void addFirst(int item){
+    public void addFirst(T item){
         Node nn=new Node();//by creating obj first node will created
         nn.val=item;
         if(size==0){
@@ -59,7 +59,7 @@ return temp.val;
         
     }
 
-    public int removeatindex(int k) throws Exception{
+    public int removeatindex(T k) throws Exception{
         if(k==0){
             return removeFirst();
         }
@@ -80,7 +80,7 @@ return temp.val;
 
         }
     }
-    public void addLast(int item){
+    public void addLast(T item){
         if(size==0){
             addFirst(item);
         }
@@ -93,7 +93,7 @@ return temp.val;
 
         }
     }
-    public void addatindex(int k,int item)throws Exception{
+    public void addatindex(int k,T item)throws Exception{
         if(k==0){
             addFirst(item);
         }
@@ -110,7 +110,7 @@ return temp.val;
 
         }
     }
-    public Node GetNode(int k)throws Exception{
+    public Node GetNode(T k)throws Exception{
         if(k<0||k>=size){
             throw new Exception("k is not in range");
         }

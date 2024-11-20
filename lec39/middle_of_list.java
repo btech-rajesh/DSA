@@ -14,7 +14,7 @@ public class middle_of_list {
     //     ListNode slow=head;
     //     ListNode fast=head;
     //     while(fast!=null && fast.next!=null){
-    //        //fast.next=tells about odd conditin and for fast=null will tell e.g is on null;
+    //        //fast.next=tells about odd conditin and for fast=null will tell even e.g is on null;
     //        slow=slow.next;
     //        fast=fast.next.next;
     //     }
